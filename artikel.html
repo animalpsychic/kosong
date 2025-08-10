@@ -1,12 +1,60 @@
-<!DOCTYPE html>
+=== post.html ===
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Judul Artikel</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Judul Artikel — Nama Situs</title>
+  <meta name="description" content="Ringkasan artikel untuk SEO.">
+  <link rel="canonical" href="https://username.github.io/posts/2025-08-10-example-post.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Judul Artikel">
+  <meta property="og:description" content="Ringkasan artikel untuk SEO.">
+  <meta property="og:url" content="https://username.github.io/posts/2025-08-10-example-post.html">
+  <meta property="og:image" content="/assets/og-image-article.jpg">
+
+  <!-- JSON-LD (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Judul Artikel",
+    "image": ["https://username.github.io/assets/og-image-article.jpg"],
+    "datePublished": "2025-08-10T08:00:00+07:00",
+    "dateModified": "2025-08-10T08:00:00+07:00",
+    "author": {"@type": "Person", "name": "Nama Penulis"},
+    "publisher": {"@type":"Organization","name":"Nama Situs","logo":{"@type":"ImageObject","url":"https://username.github.io/assets/logo.png"}}
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#content">Lewati ke konten</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Nama Situs</a>
+      <button id="menu-toggle-2" aria-expanded="false" aria-controls="nav-2">Menu</button>
+      <nav id="nav-2" class="site-nav" role="navigation">
+        <a href="/">Beranda</a>
+        <a href="/about.html">Tentang</a>
+        <a href="/contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container article-container">
+    <article class="article">
+      <header>
+        <h1>Judul Artikel</h1>
+        <p class="meta">10 Agustus 2025 • 5 menit baca</p>
+      </header>
+
+      <nav id="toc" class="toc" aria-label="Daftar Isi"></nav>
+
+      <section class="article-body">
 
 <h1>Membongkar Misteri Puter Giling: Sejarah, Filosofi, dan Praktik dalam Budaya Jawa</h1>
 
@@ -208,5 +256,19 @@
         </tbody>
     </table>
 </section>
+
+      <footer class="article-footer">
+        <p>Tags: <a href="/tag/love">love</a>, <a href="/tag/spiritual">spiritual</a></p>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="copyright-year-2"></span> Nama Situs.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js" defer></script>
 </body>
 </html>
