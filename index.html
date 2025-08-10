@@ -1,0 +1,87 @@
+=== index.html ===
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nama Situs — Deskripsi Singkat</title>
+  <meta name="description" content="Deskripsi singkat situs yang ramah SEO dan cepat.">
+  <link rel="canonical" href="https://username.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nama Situs">
+  <meta property="og:description" content="Deskripsi singkat situs yang ramah SEO.">
+  <meta property="og:url" content="https://username.github.io/">
+  <meta property="og:site_name" content="Nama Situs">
+  <meta property="og:image" content="/assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nama Situs">
+  <meta name="twitter:description" content="Deskripsi singkat situs yang ramah SEO.">
+
+  <!-- JSON-LD (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Nama Situs",
+    "url": "https://username.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://username.github.io/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Nama Situs</a>
+      <button id="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="site-nav" role="navigation">
+        <a href="/">Beranda</a>
+        <a href="/about.html">Tentang</a>
+        <a href="/contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Judul Utama Situs</h1>
+      <p class="lead">Kalimat pembuka singkat yang menjelaskan topik situs.</p>
+    </section>
+
+    <section class="posts-list" aria-label="Daftar Artikel">
+      <!--
+        To add posts: create HTML files based on post.html template and link them here.
+        Example item structure below.
+      -->
+
+      <article class="post-item">
+        <h2><a href="/posts/2025-08-10-example-post.html">Contoh Judul Artikel</a></h2>
+        <p class="meta">10 Agustus 2025 • 5 menit baca</p>
+        <p>Ringkasan singkat artikel. Buat 1-2 kalimat untuk meta description pada listing.</p>
+      </article>
+
+      <!-- Duplicate article blocks for more posts -->
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="copyright-year"></span> Nama Situs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js" defer></script>
+</body>
+</html>
